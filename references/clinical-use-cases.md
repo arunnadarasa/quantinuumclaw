@@ -1,6 +1,6 @@
 # Clinical Use Cases for Quantinuum / Guppy / Selene
 
-Reference for mapping clinical ideas to the quantum stack in this repo. Use with the OpenClaw Clinical Hackathon skill.
+Reference for mapping clinical ideas to the quantum stack in this repo. Use with the QuantinuumClaw skill (root SKILL.md).
 
 ## Drug Discovery / Molecular Simulation
 
@@ -15,7 +15,7 @@ Reference for mapping clinical ideas to the quantum stack in this repo. Use with
 - **Selene use-case:** `optimization`
 - **Guppy:** QAOA or similar; encode objective (e.g. cost, wait time, fairness); return optimal or near-optimal solution.
 - **API params (example):** `shots`, `precision`, `max_iterations`, problem-specific (e.g. number of patients, time windows).
-- **Frontend:** Sliders/inputs for problem size and constraints; “Optimize” button; display solution and metrics.
+- **Frontend:** Sliders/inputs for problem size and constraints; "Optimize" button; display solution and metrics.
 - **Demo tip:** Small instance (few variables) so runs finish quickly on emulator.
 
 ## Patient Stratification / Classification
@@ -31,7 +31,7 @@ Reference for mapping clinical ideas to the quantum stack in this repo. Use with
 - **Selene use-case:** `random`
 - **Guppy:** Hadamard on qubits; measure; return unbiased bitstring or integer.
 - **API params (example):** `bits`, `shots`.
-- **Frontend:** “Generate randomization” → display assignment (e.g. arm A/B) and audit trail (e.g. bitstring).
+- **Frontend:** "Generate randomization" → display assignment (e.g. arm A/B) and audit trail (e.g. bitstring).
 - **Demo tip:** Emulator is sufficient; emphasize unbiased randomness and reproducibility (seed if supported).
 
 ## Security / Key Material
@@ -39,7 +39,7 @@ Reference for mapping clinical ideas to the quantum stack in this repo. Use with
 - **Selene use-case:** `crypto`
 - **Guppy:** Quantum key distribution or quantum-safe key generation.
 - **API params (example):** `bits`, `shots`.
-- **Frontend:** Request key material; show “key ready” or hash; never display raw keys in UI in production.
+- **Frontend:** Request key material; show "key ready" or hash; never display raw keys in UI in production.
 - **Demo tip:** Use for protocol demos; keep keys server-side only.
 
 ## Data and Compliance Reminders

@@ -43,10 +43,7 @@ Key reference docs in this repo:
 - `references/flyio_config.md` – Fly.io deployment & tuning.
 - `references/lovable_patterns.md` – Frontend/React patterns.
 
-For hackathon-specific guidance, see:
-
-- `.cursor/skills/openclaw-clinical-hackathon/SKILL.md`
-- `.cursor/skills/openclaw-clinical-hackathon/clinical-use-cases.md`
+For hackathon and clinical use-case details, see the root **SKILL.md** (QuantinuumClaw skill) and `references/clinical-use-cases.md`.
 
 ---
 
@@ -109,9 +106,7 @@ The stack is general-purpose, but for the **OpenClaw Clinical Hackathon** you’
 | Trial randomization                         | `random`      | Quantum random number generation for unbiased assignment          |
 | Secure keys / protocols                     | `crypto`      | Quantum-safe key material or protocol building blocks             |
 
-You can find more detail in:
-
-- `.cursor/skills/openclaw-clinical-hackathon/clinical-use-cases.md`
+You can find more detail in `references/clinical-use-cases.md`.
 
 ---
 
@@ -211,12 +206,7 @@ npm run dev
 
 ```text
 quantum-guppy-selene/
-├── SKILL.md                    # Core Quantum Guppy/Selene skill
-├── .cursor/
-│   └── skills/
-│       └── openclaw-clinical-hackathon/
-│           ├── SKILL.md              # Hackathon/clinical quick-start skill
-│           └── clinical-use-cases.md # Clinical use-case mapping
+├── SKILL.md                    # QuantinuumClaw skill (quantum + clinical hackathon)
 ├── scripts/
 │   ├── create_quantum_app.py   # All-in-one creator
 │   ├── setup_selene_service.py # Backend generator
@@ -409,8 +399,6 @@ fly deploy --rollback --app your-app
 - Backend API and jobs: `references/selene_api.md`
 - Fly.io deployment details: `references/flyio_config.md`
 - Frontend patterns and charts: `references/lovable_patterns.md`
-- OpenClaw Clinical Hackathon skill and clinical mapping:
-  - `.cursor/skills/openclaw-clinical-hackathon/SKILL.md`
-  - `.cursor/skills/openclaw-clinical-hackathon/clinical-use-cases.md`
+- Clinical use-case details: `references/clinical-use-cases.md` (root SKILL.md is the combined QuantinuumClaw skill)
 
 Use this repo as a **launchpad**: pick a clinical idea, choose the closest `--use-case`, implement your Guppy circuit, and ship a full-stack quantum demo in hours instead of weeks.
